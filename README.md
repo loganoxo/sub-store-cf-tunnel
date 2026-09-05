@@ -20,12 +20,12 @@
 
 - github action 构建镜像, 使用自己的github账户fork此仓库, 然后在Action中手动执行
 - 在 `Dockerfile`所在目录执行: `docker build --no-cache -f Dockerfile -t sub-store-cf-tunnel:1.1 .`
-- 在 `docker-compose.yaml` 中部署时构建
+- 在 `docker-compose.yaml` 中部署时构建
 
 ### 1.2 部署运行
 
 - 命令 `docker compose -f docker-compose.yaml up -d`
-- 文件 `docker-compose.yaml` 内容如下:
+- 文件 `docker-compose.yaml` 内容如下:
 
 ```yaml
 services:
